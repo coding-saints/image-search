@@ -21,8 +21,8 @@ cloudinary.config({
 // Configure Algolia
 // with your Algolia credentials
 var algoliaClient = algoliasearch(
-  'id',
-  'key'
+  'al_id'
+  'al_key'
 );
 var algoliaIndex = algoliaClient.initIndex('index');
 app.post('/upload', multipartMiddleware, function(req, res) {
